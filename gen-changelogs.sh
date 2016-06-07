@@ -1,8 +1,11 @@
 #!/bin/bash
 
-usage="$(basename "$0") [-h] [-d -a] <tag1> <tag2>-- A script to generate GitHub release notes.
-Save the output to a file and paste it into a new GitHub release. You will also
-want to upload and attach the apk file to the release.
+usage="Android Changelogs Generator v1.0.0
+
+A script to generate changelogs or release notes between two git tags. You can
+save or copy and paste it into a new GitHub release, and/or CHANGELOGS.md.
+
+usage: $(basename "$0") [-h] [-d -a] <tag1> <tag2>
 
 where:
     -h  show this help text
@@ -46,9 +49,9 @@ else
 fi
 
 echo **Released**: `date '+%B %d, %Y'`
-echo 
+echo
 echo **Checksum**
-echo 
+echo
 echo '```'
 echo $ shasum -a256 mobile-release.apk
 echo `shasum -a256 "$APK_DIR"` | awk '{ print $1 " mobile-release.apk"}'
