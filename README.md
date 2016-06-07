@@ -54,7 +54,6 @@ b3bdaface013cd52aacd7024017d4de511755f14fdba487f5bf66379dedcd94d mobile-release.
 - [#716] _Replace RecyclerView with LandfillView_
 - [#718] _Rename Toolbar to Poolbar_
 - [#708] _Plug memory leak with another memory leak_
-```
 
 ## License
 Android Changelogs Generator is released under the MIT license. See LICENSE for details.
